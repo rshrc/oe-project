@@ -17,7 +17,6 @@
 # 1. import
 ############
 # import necessary functions
-from __future__ import print_function
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -123,7 +122,7 @@ class Neural_Network(object):
 #################
 def train(epoch, lr, X, y):
     NN = Neural_Network()
-    print('Neaural Network is formed.')
+    print('Neaural Network built.')
 
     # not necessary
     NN.opt_hyper_params(X, y)
