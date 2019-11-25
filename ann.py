@@ -1,29 +1,7 @@
-#############################################################################################
-#  ANN with numpy
-#############################################################################################
-#                                                   written by Rishi Banerjee, Dhrub Bhargava
-#                                                                            2017.07.30 v1.0
-#                                                                            2017.08.08 v1.1
-# ANN caculation to see how backpropagation, gradient descent really work.
-# - Data generation with numpy
-# - Feed forward using dot product and sigmoid function
-# - Backpropagation with Gradient Descent directly using numpy
-# - Optimize hyper-parameter with cost
-#
-#############################################################################################
-
-
-############
-# 1. import
-############
-# import necessary functions
 import numpy as np
 import matplotlib.pyplot as plt
 
 
-###############
-# 2. ANN model
-###############
 
 class Neural_Network(object):
     def __init__(self):
@@ -117,9 +95,6 @@ class Neural_Network(object):
         self.hiddenLayerSize = best_params['hidden_dim']
 
 
-#################
-# 3. train model
-#################
 def train(epoch, lr, X, y):
     NN = Neural_Network()
     print('Neaural Network built.')
